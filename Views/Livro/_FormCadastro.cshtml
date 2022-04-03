@@ -1,19 +1,29 @@
 @model Livro
 <div class="row justify-content-md-center">
-    <form asp-action="Cadastro" method="POST" class="col-md-4">
+    <form asp-action="Cadastro" method="POST" class="col-md-4 needs-validation" novalidate>
         <input type="hidden" asp-for="Id" />
         <div class="form-group">
-            <label asp-for="Titulo">Titulo</label>
-            <input asp-for="Titulo" class="form-control" />
+            <label for="validationCustom01" asp-for="Titulo">Titulo</label>
+            <input id="validationCustom01" type="text" asp-for="Titulo" class="form-control" required />
+            <div class="invalid-feedback">
+                Por favor preencha o título do livro!
+            </div>
         </div>
         <div class="form-group">
-            <label asp-for="Autor">Autor</label>
-            <input asp-for="Autor" class="form-control" />
+            <label for="validationCustom02" asp-for="Autor">Autor</label>
+            <input id="validationCustom02" type="text" asp-for="Autor" class="form-control" required />
+            <div class="invalid-feedback">
+                Por favor insira o nome do autor!
+            </div>
         </div>
-        <div>
-            <label asp-for="Ano">Ano</label>
-            <input asp-for="Ano" />
+        <div class="form-group">
+            <label for="validationCustom03" asp-for="Ano">Ano</label>
+            <input id="validationCustom03" type="number" asp-for="Ano" class="form-control" required />
+            <div class="invalid-feedback">
+                Informe o ano da publicação!
+            </div>
         </div>
         <input type="submit" value="Salvar" class="btn btn-primary" />
     </form>
 </div>
+<script type="text/javascript" src="~/js/site.js"></script>
