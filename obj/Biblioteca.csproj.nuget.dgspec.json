@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "d:\\Documents\\Cursos On-line\\curso-ipi-senac\\Disciplinas\\DocumentarApps\\Biblioteca\\Biblioteca.csproj": {}
+    "D:\\Documents\\Cursos On-line\\curso-ipi-senac\\Disciplinas\\DocumentarApps\\Biblioteca\\Biblioteca.csproj": {}
   },
   "projects": {
-    "d:\\Documents\\Cursos On-line\\curso-ipi-senac\\Disciplinas\\DocumentarApps\\Biblioteca\\Biblioteca.csproj": {
+    "D:\\Documents\\Cursos On-line\\curso-ipi-senac\\Disciplinas\\DocumentarApps\\Biblioteca\\Biblioteca.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "d:\\Documents\\Cursos On-line\\curso-ipi-senac\\Disciplinas\\DocumentarApps\\Biblioteca\\Biblioteca.csproj",
+        "projectUniqueName": "D:\\Documents\\Cursos On-line\\curso-ipi-senac\\Disciplinas\\DocumentarApps\\Biblioteca\\Biblioteca.csproj",
         "projectName": "Biblioteca",
-        "projectPath": "d:\\Documents\\Cursos On-line\\curso-ipi-senac\\Disciplinas\\DocumentarApps\\Biblioteca\\Biblioteca.csproj",
+        "projectPath": "D:\\Documents\\Cursos On-line\\curso-ipi-senac\\Disciplinas\\DocumentarApps\\Biblioteca\\Biblioteca.csproj",
         "packagesPath": "C:\\Users\\wagne\\.nuget\\packages\\",
-        "outputPath": "d:\\Documents\\Cursos On-line\\curso-ipi-senac\\Disciplinas\\DocumentarApps\\Biblioteca\\obj\\",
+        "outputPath": "D:\\Documents\\Cursos On-line\\curso-ipi-senac\\Disciplinas\\DocumentarApps\\Biblioteca\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "C:\\Users\\wagne\\AppData\\Roaming\\NuGet\\NuGet.Config"

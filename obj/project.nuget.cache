@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "NegosSso181tm5vuudNZsETn3C5keHnM703ps3IFayD2ToQgEjfqG6HaoO80N9bXlQgOziUzzdShVKGYssg9ew==",
+  "dgSpecHash": "L65nV7ktsJDABJvzOV8rLlOIAZt+OcfbNlMriy6Ha7lOGoP0IIkVvuQRMhVAUCoDbbb7IaEamyHiaEGojU93Mg==",
   "success": true,
-  "projectFilePath": "d:\\Documents\\Cursos On-line\\curso-ipi-senac\\Disciplinas\\DocumentarApps\\Biblioteca\\Biblioteca.csproj",
+  "projectFilePath": "D:\\Documents\\Cursos On-line\\curso-ipi-senac\\Disciplinas\\DocumentarApps\\Biblioteca\\Biblioteca.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\wagne\\.nuget\\packages\\microsoft.csharp\\4.6.0\\microsoft.csharp.4.6.0.nupkg.sha512",
     "C:\\Users\\wagne\\.nuget\\packages\\microsoft.entityframeworkcore\\3.0.0\\microsoft.entityframeworkcore.3.0.0.nupkg.sha512",
