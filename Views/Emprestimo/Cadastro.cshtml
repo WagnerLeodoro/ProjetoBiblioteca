@@ -40,7 +40,7 @@
                 <select id="validationCustom05" asp-for="Emprestimo.LivroId" class="form-control" required>
                     @foreach (Livro l in Model.Livros)
                     {
-                        <option value="@l.Id">@l.Titulo</option>
+                        <option value="@l.Id" required>@l.Titulo</option>
                     }
                 </select>
             </div>
