@@ -7,29 +7,29 @@ namespace Biblioteca.Models
     {
         public Usuario ListarPorId(int id)
         {
-            using(BibliotecaContext bc = new BibliotecaContext())
+            using (BibliotecaContext bc = new BibliotecaContext())
             {
                 return bc.Usuarios.Find();
             }
         }
         public List<Usuario> Listar()
         {
-            using(BibliotecaContext bc = new BibliotecaContext())
+            using (BibliotecaContext bc = new BibliotecaContext())
             {
                 return bc.Usuarios.ToList();
             }
         }
-        public void IncluirUsuario(Usuario u)
+        public void Inserir(Usuario u)
         {
-            using(BibliotecaContext bc = new BibliotecaContext())
+            using (BibliotecaContext bc = new BibliotecaContext())
             {
                 bc.Add(u);
                 bc.SaveChanges();
             }
         }
-        public void EditarUsuario(Usuario editU)
+        public void Editar(Usuario editU)
         {
-            using(BibliotecaContext bc = new BibliotecaContext())
+            using (BibliotecaContext bc = new BibliotecaContext())
             {
                 Usuario u = ListarPorId(editU.Id);
                 u.Login = editU.Login;
@@ -39,7 +39,7 @@ namespace Biblioteca.Models
                 bc.SaveChanges();
             }
         }
-        public void ExcluirUsuario(int id)
+        public void Excluir(int id)
         {
             using (BibliotecaContext bc = new BibliotecaContext())
             {
