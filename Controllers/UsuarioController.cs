@@ -59,8 +59,6 @@ namespace Biblioteca.Controllers
             HttpContext.Session.Clear();
             return View("../Home/Login");
         }
-
-
     }
 
 }
