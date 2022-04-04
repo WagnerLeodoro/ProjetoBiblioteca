@@ -14422,6 +14422,11 @@
       "FileKind": "mvc"
     },
     {
+      "FilePath": "d:\\Documents\\Cursos On-line\\curso-ipi-senac\\Disciplinas\\DocumentarApps\\Biblioteca\\Views\\Usuario\\Listagem.cshtml",
+      "TargetPath": "Views\\Usuario\\Listagem.cshtml",
+      "FileKind": "mvc"
+    },
+    {
       "FilePath": "d:\\Documents\\Cursos On-line\\curso-ipi-senac\\Disciplinas\\DocumentarApps\\Biblioteca\\Views\\Emprestimo\\Cadastro.cshtml",
       "TargetPath": "Views\\Emprestimo\\Cadastro.cshtml",
       "FileKind": "mvc"
@@ -14439,6 +14444,16 @@
     {
       "FilePath": "d:\\Documents\\Cursos On-line\\curso-ipi-senac\\Disciplinas\\DocumentarApps\\Biblioteca\\Views\\Livro\\Listagem.cshtml",
       "TargetPath": "Views\\Livro\\Listagem.cshtml",
+      "FileKind": "mvc"
+    },
+    {
+      "FilePath": "d:\\Documents\\Cursos On-line\\curso-ipi-senac\\Disciplinas\\DocumentarApps\\Biblioteca\\Views\\Usuario\\Excluir.cshtml",
+      "TargetPath": "Views\\Usuario\\Excluir.cshtml",
+      "FileKind": "mvc"
+    },
+    {
+      "FilePath": "d:\\Documents\\Cursos On-line\\curso-ipi-senac\\Disciplinas\\DocumentarApps\\Biblioteca\\Views\\Usuario\\Edicao.cshtml",
+      "TargetPath": "Views\\Usuario\\Edicao.cshtml",
       "FileKind": "mvc"
     },
     {
@@ -14469,6 +14484,11 @@
     {
       "FilePath": "d:\\Documents\\Cursos On-line\\curso-ipi-senac\\Disciplinas\\DocumentarApps\\Biblioteca\\Views\\Livro\\Cadastro.cshtml",
       "TargetPath": "Views\\Livro\\Cadastro.cshtml",
+      "FileKind": "mvc"
+    },
+    {
+      "FilePath": "d:\\Documents\\Cursos On-line\\curso-ipi-senac\\Disciplinas\\DocumentarApps\\Biblioteca\\Views\\Usuario\\Cadastro.cshtml",
+      "TargetPath": "Views\\Usuario\\Cadastro.cshtml",
       "FileKind": "mvc"
     },
     {
