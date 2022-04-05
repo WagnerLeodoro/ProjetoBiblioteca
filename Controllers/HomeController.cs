@@ -36,9 +36,7 @@ namespace Biblioteca.Controllers
             /* if(login != "admin" || senha != "123") */
             if (Autenticacao.verificaLoginSenha(login, senha, this))
             {
-                HttpContext.Session.SetString("user", "admin");
                 return RedirectToAction("Index");
-
             }
             else
             {

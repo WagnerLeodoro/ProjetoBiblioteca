@@ -2,6 +2,22 @@
   "version": 3,
   "targets": {
     ".NETCoreApp,Version=v3.1": {
+      "MD5/2.0.2": {
+        "type": "package",
+        "compile": {
+          "lib/netstandard2.0/MD5.dll": {}
+        },
+        "runtime": {
+          "lib/netstandard2.0/MD5.dll": {}
+        },
+        "contentFiles": {
+          "contentFiles/any/netstandard2.0/logo.ico": {
+            "buildAction": "Content",
+            "codeLanguage": "any",
+            "copyToOutput": false
+          }
+        }
+      },
       "Microsoft.CSharp/4.6.0": {
         "type": "package",
         "compile": {
@@ -285,6 +301,23 @@
     }
   },
   "libraries": {
+    "MD5/2.0.2": {
+      "sha512": "D/PN+bsu9o53dYNy2gWD7Kk97Z5oHWcQq41Fjgv7BN/UsSKeTCOJFZj2qazq0iosTIQ9fZE3/cC5TieMHDcpzw==",
+      "type": "package",
+      "path": "md5/2.0.2",
+      "files": [
+        ".nupkg.metadata",
+        ".signature.p7s",
+        "content/logo.ico",
+        "contentFiles/any/netstandard2.0/logo.ico",
+        "lib/netstandard2.0/MD5.dll",
+        "license.txt",
+        "logo.png",
+        "md5.2.0.2.nupkg.sha512",
+        "md5.nuspec",
+        "readme.md"
+      ]
+    },
     "Microsoft.CSharp/4.6.0": {
       "sha512": "kxn3M2rnAGy5N5DgcIwcE8QTePWU/XiYcQVzn9HqTls2NKluVzVSmVWRjK7OUPWbljCXuZxHyhEz9kPRIQeXow==",
       "type": "package",
@@ -840,6 +873,7 @@
   },
   "projectFileDependencyGroups": {
     ".NETCoreApp,Version=v3.1": [
+      "MD5 >= 2.0.2",
       "Microsoft.EntityFrameworkCore.Design >= 3.0.0",
       "Pomelo.EntityFrameworkCore.MySql >= 3.0.0"
     ]
@@ -879,6 +913,10 @@
     "frameworks": {
       "netcoreapp3.1": {
         "dependencies": {
+          "MD5": {
+            "target": "Package",
+            "version": "[2.0.2, )"
+          },
           "Microsoft.EntityFrameworkCore.Design": {
             "target": "Package",
             "version": "[3.0.0, )"

@@ -11,7 +11,7 @@ namespace Biblioteca.Controllers
     {
         public static void CheckLogin(Controller controller)
         {
-            if (string.IsNullOrEmpty(controller.HttpContext.Session.GetString("user")))
+            if (string.IsNullOrEmpty(controller.HttpContext.Session.GetString("login")))
             {
                 controller.Request.HttpContext.Response.Redirect("/Home/Login");
             }
@@ -24,8 +24,7 @@ namespace Biblioteca.Controllers
             {
                 verificaSeUsuarioAdminExiste(bc);//se nao tiver admin ele cria;
 
-                Usuario u = new Usuario();
-                u.Senha = senha;
+                senha = Hash.Crypto(senha);
                 IQueryable<Usuario> usuario = bc.Usuarios.Where(u => u.Login == login && u.Senha == senha);
                 List<Usuario> ListaUsuarios = usuario.ToList();
 
@@ -45,7 +44,7 @@ namespace Biblioteca.Controllers
 
         }
 
-        public static void verificaSeUsuarioAdminExiste(BibliotecaContext bc)//verifica se existe, e caso nao cria.
+        public static void verificaSeUsuarioAdminExiste(BibliotecaContext bc)
         {
 
             IQueryable<Usuario> usuario = bc.Usuarios.Where(u => u.Login == "admin");
@@ -55,7 +54,7 @@ namespace Biblioteca.Controllers
 
                 Usuario admin = new Usuario();
                 admin.Login = "admin";
-                admin.Senha = "123";
+                admin.Senha = Hash.Crypto("123");
                 admin.Tipo = 0;
                 admin.Nome = "Administrador";
                 bc.Usuarios.Add(admin);

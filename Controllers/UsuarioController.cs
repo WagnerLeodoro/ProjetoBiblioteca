@@ -25,6 +25,7 @@ namespace Biblioteca.Controllers
             Autenticacao.CheckLogin(this);
             Autenticacao.verificaSeUsuarioEAdmin(this);
             UsuarioService us = new UsuarioService();
+            u.Senha = Hash.Crypto(u.Senha);
             us.Inserir(u);
             return RedirectToAction("Listagem");
         }
@@ -41,6 +42,7 @@ namespace Biblioteca.Controllers
             Autenticacao.CheckLogin(this);
             Autenticacao.verificaSeUsuarioEAdmin(this);
             UsuarioService us = new UsuarioService();
+            editU.Senha = Hash.Crypto(editU.Senha);
             us.Editar(editU);
             return RedirectToAction("Listagem");
         }

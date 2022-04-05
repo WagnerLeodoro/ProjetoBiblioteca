@@ -1,9 +1,10 @@
 {
   "version": 2,
-  "dgSpecHash": "L65nV7ktsJDABJvzOV8rLlOIAZt+OcfbNlMriy6Ha7lOGoP0IIkVvuQRMhVAUCoDbbb7IaEamyHiaEGojU93Mg==",
+  "dgSpecHash": "wgAuKURDT4uIHsRcnqL1YNux0EtUzaiQqACVf69jn4qy5tqUTzI0DAqjOMlhaucOj+A7EkYk6zmOAEJFKk1Pcw==",
   "success": true,
   "projectFilePath": "D:\\Documents\\Cursos On-line\\curso-ipi-senac\\Disciplinas\\DocumentarApps\\Biblioteca\\Biblioteca.csproj",
   "expectedPackageFiles": [
+    "C:\\Users\\wagne\\.nuget\\packages\\md5\\2.0.2\\md5.2.0.2.nupkg.sha512",
     "C:\\Users\\wagne\\.nuget\\packages\\microsoft.csharp\\4.6.0\\microsoft.csharp.4.6.0.nupkg.sha512",
     "C:\\Users\\wagne\\.nuget\\packages\\microsoft.entityframeworkcore\\3.0.0\\microsoft.entityframeworkcore.3.0.0.nupkg.sha512",
     "C:\\Users\\wagne\\.nuget\\packages\\microsoft.entityframeworkcore.abstractions\\3.0.0\\microsoft.entityframeworkcore.abstractions.3.0.0.nupkg.sha512",
