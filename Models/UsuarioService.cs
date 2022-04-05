@@ -9,7 +9,7 @@ namespace Biblioteca.Models
         {
             using (BibliotecaContext bc = new BibliotecaContext())
             {
-                return bc.Usuarios.Find();
+                return bc.Usuarios.Find(id);
             }
         }
         public List<Usuario> Listar()

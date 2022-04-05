@@ -1,0 +1,38 @@
+@model Usuario
+
+<h1>Altere seus dados</h1>
+
+<form class="col-md-4 needs-validation" asp-action="Edicao" method="post" novalidate>
+    <input type="hidden" asp-for="@Model.Id" />
+    <div class="form-group">
+        <label for="validationCustom01" asp-for="Nome">Nome: </label>
+        <input class="form-control" type="text" asp-for="Nome" id="validationCustom01" value="@Model.Nome" required />
+        <div class="invalid-feedback">
+            Por favor insira um nome de usuário!
+        </div>
+    </div>
+    <div class="form-group">
+        <label for="validationCustom02" asp-for="Login">Login: </label>
+        <input class="form-control" type="text" asp-for="Login" id="validationCustom02" value="@Model.Login" required />
+        <div class="invalid-feedback">
+            Por favor insira um login de usuário!
+        </div>
+    </div>
+    <div class="form-group">
+        <label for="validationCustom03" asp-for="Senha">Senha: </label>
+        <input class="form-control" type="password" asp-for="Senha" id="validationCustom03" required minlength="8"
+            value="@Model.Senha" />
+        <div class="invalid-feedback">
+            Por favor insira uma senha válida (mínimo 8 caracteres)!
+        </div>
+    </div>
+
+    <div class="form-group">
+        <label for="validationCustom04" asp-for="Tipo">Tipo Usuário:</label>
+        <select class="form-control" id="validationCustom04" asp-for="Tipo" required>
+            <option value="@Usuario.padrao">Padrão</option>
+            <option value="@Usuario.admin">Administrador</option>
+        </select>
+    </div>
+    <input type="submit" value="CONCLUIR EDIÇÃO">
+</form>

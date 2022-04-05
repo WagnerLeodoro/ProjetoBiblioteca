@@ -14487,6 +14487,11 @@
       "FileKind": "mvc"
     },
     {
+      "FilePath": "d:\\Documents\\Cursos On-line\\curso-ipi-senac\\Disciplinas\\DocumentarApps\\Biblioteca\\Views\\Usuario\\LoginError.cshtml",
+      "TargetPath": "Views\\Usuario\\LoginError.cshtml",
+      "FileKind": "mvc"
+    },
+    {
       "FilePath": "d:\\Documents\\Cursos On-line\\curso-ipi-senac\\Disciplinas\\DocumentarApps\\Biblioteca\\Views\\Usuario\\Cadastro.cshtml",
       "TargetPath": "Views\\Usuario\\Cadastro.cshtml",
       "FileKind": "mvc"

@@ -8,35 +8,46 @@ namespace Biblioteca.Controllers
     {
         public IActionResult Listagem()
         {
+            Autenticacao.CheckLogin(this);
+            Autenticacao.verificaSeUsuarioEAdmin(this);
             UsuarioService Lista = new UsuarioService();
             return View(Lista.Listar());
         }
         public IActionResult Cadastro()
         {
+            Autenticacao.CheckLogin(this);
+            Autenticacao.verificaSeUsuarioEAdmin(this);
             return View();
         }
         [HttpPost]
         public IActionResult Cadastro(Usuario u)
         {
+            Autenticacao.CheckLogin(this);
+            Autenticacao.verificaSeUsuarioEAdmin(this);
             UsuarioService us = new UsuarioService();
-            u.Senha = u.Senha;
             us.Inserir(u);
             return RedirectToAction("Listagem");
         }
-        public IActionResult Editar(int id)
+        public IActionResult Edicao(int id)
         {
+            Autenticacao.CheckLogin(this);
+            Autenticacao.verificaSeUsuarioEAdmin(this);
             Usuario u = new UsuarioService().ListarPorId(id);
             return View(u);
         }
         [HttpPost]
-        public IActionResult Editar(Usuario editU)
+        public IActionResult Edicao(Usuario editU)
         {
+            Autenticacao.CheckLogin(this);
+            Autenticacao.verificaSeUsuarioEAdmin(this);
             UsuarioService us = new UsuarioService();
             us.Editar(editU);
             return RedirectToAction("Listagem");
         }
         public IActionResult Excluir(int id)
         {
+            Autenticacao.CheckLogin(this);
+            Autenticacao.verificaSeUsuarioEAdmin(this);
             return View(new UsuarioService().ListarPorId(id));
         }
         [HttpPost]
@@ -51,13 +62,19 @@ namespace Biblioteca.Controllers
             else
             {
                 ViewData["Mensagem"] = "Exclusao cancelada";
-                return RedirectToAction("ListaDeUsuarios");
+                return RedirectToAction("Listagem");
             }
         }
         public IActionResult Sair()
         {
             HttpContext.Session.Clear();
-            return View("../Home/Login");
+            return Redirect("/Home/Login");
+        }
+        public IActionResult LoginError()
+        {
+            Autenticacao.CheckLogin(this);
+            //Autenticacao.verificaSeUsuarioEAdmin(this);
+            return View();
         }
     }
 
