@@ -31,7 +31,7 @@ namespace Biblioteca.Models
         {
             using (BibliotecaContext bc = new BibliotecaContext())
             {
-                Usuario u = ListarPorId(editU.Id);
+                Usuario u = bc.Usuarios.Find(editU.Id);
                 u.Login = editU.Login;
                 u.Nome = editU.Nome;
                 u.Senha = editU.Senha;

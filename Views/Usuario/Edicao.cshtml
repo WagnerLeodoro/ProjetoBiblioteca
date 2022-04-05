@@ -3,7 +3,7 @@
 <h1>Altere seus dados</h1>
 
 <form class="col-md-4 needs-validation" asp-action="Edicao" method="post" novalidate>
-    <input type="hidden" asp-for="@Model.Id" />
+    <input type="hidden" asp-for="Id" />
     <div class="form-group">
         <label for="validationCustom01" asp-for="Nome">Nome: </label>
         <input class="form-control" type="text" asp-for="Nome" id="validationCustom01" value="@Model.Nome" required />
@@ -34,5 +34,5 @@
             <option value="@Usuario.admin">Administrador</option>
         </select>
     </div>
-    <input type="submit" value="CONCLUIR EDIÇÃO">
+    <input class="btn btn-primary" type="submit" value="Salvar">
 </form>
