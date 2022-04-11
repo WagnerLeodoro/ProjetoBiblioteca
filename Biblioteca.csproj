@@ -3,11 +3,13 @@
     <TargetFramework>netcoreapp3.1</TargetFramework>
     <RootNamespace>Biblioteca</RootNamespace>
   </PropertyGroup>
-  <ItemGroup>&#xD;
+  <ItemGroup>&#xD;&#xD;
   </ItemGroup>
   <ItemGroup>
     <PackageReference Include="Pomelo.EntityFrameworkCore.MySql" Version="3.0.0"/>
     <PackageReference Include="Microsoft.EntityFrameworkCore.Design" Version="3.0.0"/>
     <PackageReference Include="MD5" Version="2.0.2"/>
+    <PackageReference Include="X.PagedList.Mvc.Core" Version="8.1.0"/>
+    <PackageReference Include="X.PagedList" Version="8.1.0"/>
   </ItemGroup>
 </Project>

@@ -1,6 +1,9 @@
-@model List<Livro>
+@using X.PagedList.Mvc.Core
+@model X.PagedList.IPagedList<Biblioteca.Models.Livro>
+<link href="~/css/PagedList.css" rel="stylesheet" type="text/css" />
+
 @{
-    ViewData["Title"] = "Listagem de Livros";
+    ViewBag.Title = "Listagem de Livros";
 }
 <div class="row">
     <div class="col-md-12">
@@ -14,7 +17,10 @@
             <div class="form-group mb-2 mx-sm-3">
                 <input type="text" placeholder="Filtro" name="Filtro" class="form-control" />
             </div>
-            <button type="submit" class="btn btn-primary mb-2">Pesquisar</button>
+            <div class="form-group mb-2 mx-sm-3">
+                <button type="submit" class="btn btn-primary">Pesquisar</button>
+            </div>
+            <a class="btn btn-primary mb-2" href="/Livro/Cadastro">Cadastrar Novo</a>
         </form>
     </div>
 </div>
@@ -47,6 +53,14 @@
             </table>
         </div>
     </div>
+    <nav class="col">
+        <div class="row justify-content-between align-center">
+            @Html.PagedListPager(Model, page => Url.Action("Listagem", new { pagina = page }))
+            <span class="pull-right">
+                Pagina @(Model.PageCount < Model.PageNumber ? 0 : Model.PageNumber) de @Model.PageCount
+            </span>
+        </div>
+    </nav>
 }
 else
 {

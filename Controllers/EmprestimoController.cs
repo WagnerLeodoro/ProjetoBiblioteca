@@ -1,8 +1,11 @@
+using System;
+using System.Linq;
+using X.PagedList;
 using Biblioteca.Models;
-using Microsoft.AspNetCore.Authorization;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.AspNetCore.Http;
-using System;
+using System.Collections.Generic;
+using Microsoft.AspNetCore.Authorization;
 
 namespace Biblioteca.Controllers
 {
@@ -37,7 +40,7 @@ namespace Biblioteca.Controllers
             return RedirectToAction("Listagem");
         }
 
-        public IActionResult Listagem(string tipoFiltro, string filtro)
+        public IActionResult Listagem(string tipoFiltro, string filtro, int? pagina)
         {
             Autenticacao.CheckLogin(this);
 
@@ -48,8 +51,12 @@ namespace Biblioteca.Controllers
                 objFiltro.Filtro = filtro;
                 objFiltro.TipoFiltro = tipoFiltro;
             }
+            int size = 10;
+            int page = pagina ?? 1;
             EmprestimoService emprestimoService = new EmprestimoService();
-            return View(emprestimoService.ListarTodos(objFiltro));
+            ICollection<Emprestimo> lista = emprestimoService.ListarTodos(objFiltro);
+            var emprestimos = lista.OrderBy(e => e.Id).ToPagedList(page, size);
+            return View(emprestimos);
         }
 
         public IActionResult Edicao(int id)

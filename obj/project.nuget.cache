@@ -1,9 +1,10 @@
 {
   "version": 2,
-  "dgSpecHash": "wgAuKURDT4uIHsRcnqL1YNux0EtUzaiQqACVf69jn4qy5tqUTzI0DAqjOMlhaucOj+A7EkYk6zmOAEJFKk1Pcw==",
+  "dgSpecHash": "11IqWXWn82i0F1mTal+PijNKu/D12whT7UvCDq2jaCrCcaMz/yZpugRqutaZ9c6ys7ZPc2tdhJR8qB17opIcsg==",
   "success": true,
   "projectFilePath": "D:\\Documents\\Cursos On-line\\curso-ipi-senac\\Disciplinas\\DocumentarApps\\Biblioteca\\Biblioteca.csproj",
   "expectedPackageFiles": [
+    "C:\\Users\\wagne\\.nuget\\packages\\jetbrains.annotations\\2021.1.0\\jetbrains.annotations.2021.1.0.nupkg.sha512",
     "C:\\Users\\wagne\\.nuget\\packages\\md5\\2.0.2\\md5.2.0.2.nupkg.sha512",
     "C:\\Users\\wagne\\.nuget\\packages\\microsoft.csharp\\4.6.0\\microsoft.csharp.4.6.0.nupkg.sha512",
     "C:\\Users\\wagne\\.nuget\\packages\\microsoft.entityframeworkcore\\3.0.0\\microsoft.entityframeworkcore.3.0.0.nupkg.sha512",
@@ -29,7 +30,9 @@
     "C:\\Users\\wagne\\.nuget\\packages\\system.collections.immutable\\1.6.0\\system.collections.immutable.1.6.0.nupkg.sha512",
     "C:\\Users\\wagne\\.nuget\\packages\\system.componentmodel.annotations\\4.6.0\\system.componentmodel.annotations.4.6.0.nupkg.sha512",
     "C:\\Users\\wagne\\.nuget\\packages\\system.diagnostics.diagnosticsource\\4.6.0\\system.diagnostics.diagnosticsource.4.6.0.nupkg.sha512",
-    "C:\\Users\\wagne\\.nuget\\packages\\system.threading.tasks.extensions\\4.5.2\\system.threading.tasks.extensions.4.5.2.nupkg.sha512"
+    "C:\\Users\\wagne\\.nuget\\packages\\system.threading.tasks.extensions\\4.5.2\\system.threading.tasks.extensions.4.5.2.nupkg.sha512",
+    "C:\\Users\\wagne\\.nuget\\packages\\x.pagedlist\\8.1.0\\x.pagedlist.8.1.0.nupkg.sha512",
+    "C:\\Users\\wagne\\.nuget\\packages\\x.pagedlist.mvc.core\\8.1.0\\x.pagedlist.mvc.core.8.1.0.nupkg.sha512"
   ],
   "logs": []
 }
