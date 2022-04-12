@@ -12,6 +12,7 @@ namespace Biblioteca.Controllers
 
     public class EmprestimoController : Controller
     {
+        private BibliotecaContext context = new BibliotecaContext();
         public IActionResult Cadastro()
         {
             Autenticacao.CheckLogin(this);
@@ -55,7 +56,7 @@ namespace Biblioteca.Controllers
             int page = pagina ?? 1;
             EmprestimoService emprestimoService = new EmprestimoService();
             ICollection<Emprestimo> lista = emprestimoService.ListarTodos(objFiltro);
-            var emprestimos = lista.OrderBy(e => e.Id).ToPagedList(page, size);
+            var emprestimos = lista.ToPagedList(page, size);
             return View(emprestimos);
         }
 
